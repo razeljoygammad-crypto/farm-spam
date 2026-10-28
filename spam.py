@@ -1476,7 +1476,7 @@ async def farmadd(
         f"✅ **{world}** added to your private **{info['emoji']} {info['label']}** list.\n"
         f"⏱️ Timer: `{format_long_time(info['seconds'])}`\n"
         "Use `/farm` to start it.",
-
+        ephemeral=True
     )
 
 @bot.tree.command(name="farmremove", description="Remove one of your farm worlds")
